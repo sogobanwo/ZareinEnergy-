@@ -45,10 +45,9 @@ export default function ServicesPage() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="h-10 sm:h-11 md:h-12 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-[6px] relative bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center bg-[length:200%_auto] hover:bg-right transition-all duration-500"
+              className="h-10 sm:h-11 md:h-12 px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-[6px] relative bg-[#1a5f7a] hover:bg-[#0f4a61] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center transition-all duration-500"
               onClick={() => window.location.href = '/contact'}
             >
-              <div className="w-20 sm:w-24 md:w-28 lg:w-44 h-[41px] absolute left-0 top-[-0.5px] bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(0,0,0,0.10)] mix-blend-multiply"></div>
               <div className="flex flex-col justify-center text-white text-sm sm:text-base md:text-[15px] font-medium leading-5 font-sans relative z-10">
                 Discover Our Solutions
               </div>
@@ -91,7 +90,7 @@ export default function ServicesPage() {
                   {/* Solar Energy Solutions */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#2b8c3e] to-[#1a5f7a] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">☀️</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Solar Energy Solutions</h2>
@@ -118,7 +117,7 @@ export default function ServicesPage() {
                   {/* Wind Energy Solutions */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#1a5f7a] to-[#2b8c3e] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">💨</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Wind Energy Solutions</h2>
@@ -145,7 +144,7 @@ export default function ServicesPage() {
                   {/* Hydroelectric Solutions */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#2b8c3e] to-[#1a5f7a] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">💧</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Hydroelectric Solutions</h2>
@@ -172,7 +171,7 @@ export default function ServicesPage() {
                   {/* Energy Storage Solutions */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#1a5f7a] to-[#2b8c3e] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">🔋</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Energy Storage Solutions</h2>
@@ -199,7 +198,7 @@ export default function ServicesPage() {
                   {/* Smart Grid Solutions */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#2b8c3e] to-[#1a5f7a] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">🌐</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Smart Grid Solutions</h2>
@@ -226,7 +225,7 @@ export default function ServicesPage() {
                   {/* Consulting & Integration */}
                   <motion.div variants={fadeInUp} className="flex flex-col gap-6">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#1a5f7a] to-[#2b8c3e] rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#1a5f7a] rounded-lg flex items-center justify-center">
                         <span className="text-white text-2xl">📊</span>
                       </div>
                       <h2 className="text-[#1a5f7a] text-2xl font-semibold">Consulting & Integration</h2>

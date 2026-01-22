@@ -20,7 +20,7 @@ export function HeroSection() {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <Button className="h-10 px-12 bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] hover:from-[#0f4a61] hover:to-[#1f6a2f] text-white rounded-full font-medium text-sm shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset]">
+            <Button className="h-10 px-12 bg-[#1a5f7a] hover:bg-[#0f4a61] text-white rounded-full font-medium text-sm shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] transition-colors">
               Explore Our Solutions
             </Button>
           </div>

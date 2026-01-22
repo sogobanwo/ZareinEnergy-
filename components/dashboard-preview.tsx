@@ -35,7 +35,7 @@ export function DashboardPreview() {
             <div className="flex-1 p-6">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-semibold text-[#1a5f7a]">Active Power Plants</h2>
-                <Button className="bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] hover:from-[#0f4a61] hover:to-[#1f6a2f] text-white text-sm">Add Facility</Button>
+                <Button className="bg-[#1a5f7a] hover:bg-[#0f4a61] text-white text-sm">Add Facility</Button>
               </div>
 
               {/* Table Mockup */}

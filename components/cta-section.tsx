@@ -34,8 +34,7 @@ export default function CTASection() {
           </div>
           <div className="w-full max-w-[497px] flex flex-col justify-center items-center gap-12">
             <div className="flex justify-start items-center gap-4">
-              <div className="h-10 px-12 py-[6px] relative bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center cursor-pointer hover:from-[#0f4a61] hover:to-[#1f6a2f] transition-all">
-                <div className="w-44 h-[41px] absolute left-0 top-0 bg-gradient-to-b from-[rgba(255,255,255,0.1)] to-[rgba(0,0,0,0.10)] mix-blend-multiply"></div>
+              <div className="h-10 px-12 py-[6px] relative bg-[#1a5f7a] shadow-[0px_0px_0px_2.5px_rgba(255,255,255,0.08)_inset] overflow-hidden rounded-full flex justify-center items-center cursor-pointer hover:bg-[#0f4a61] transition-all">
                 <div className="flex flex-col justify-center text-white text-[13px] font-medium leading-5 font-sans">
                   Get in Touch
                 </div>

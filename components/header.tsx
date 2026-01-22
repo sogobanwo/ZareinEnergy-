@@ -89,7 +89,7 @@ export function Header() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="hidden md:block bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] text-white px-5 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-shadow"
+              className="hidden md:block bg-[#1a5f7a] hover:bg-[#0f4a61] text-white px-5 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all"
               onClick={() => window.location.href = '/contact'}
             >
               Get Started
@@ -148,7 +148,7 @@ export function Header() {
             </nav>
             <motion.button
               whileTap={{ scale: 0.95 }}
-              className="w-full max-w-xs bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] text-white px-8 py-4 rounded-full text-lg font-medium shadow-md"
+              className="w-full max-w-xs bg-[#1a5f7a] active:bg-[#0f4a61] text-white px-8 py-4 rounded-full text-lg font-medium shadow-md transition-colors"
               onClick={() => {
                 setMobileMenuOpen(false)
                 window.location.href = '/contact'
