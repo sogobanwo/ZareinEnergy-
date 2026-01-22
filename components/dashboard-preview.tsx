@@ -4,7 +4,7 @@ export function DashboardPreview() {
     <section className="relative pb-16">
       <div className="max-w-[1060px] mx-auto px-4">
         {/* Dashboard Interface Mockup */}
-        <div className="relative bg-white rounded-lg shadow-lg border border-[#e0dedb] overflow-hidden">
+        <div className="relative rounded-lg shadow-lg border border-[#e0dedb] overflow-hidden">
           {/* Dashboard Header */}
           <div className="flex items-center justify-between p-4 border-b border-[#1a5f7a]/10">
             <div className="flex items-center gap-3">
@@ -20,7 +20,7 @@ export function DashboardPreview() {
           {/* Sidebar and Main Content */}
           <div className="flex">
             {/* Sidebar */}
-            <div className="w-48 bg-white border-r border-[#1a5f7a]/10 p-4">
+            <div className="w-48 border-r border-[#1a5f7a]/10 p-4">
               <nav className="space-y-2">
                 <div className="text-xs font-medium text-[#1a5f7a] uppercase tracking-wide mb-3">Navigation</div>
                 {["Dashboard", "Grid Status", "Energy Output", "Storage", "Alerts", "Reports"].map((item) => (
@@ -39,8 +39,8 @@ export function DashboardPreview() {
               </div>
 
               {/* Table Mockup */}
-              <div className="bg-white border border-[#1a5f7a]/10 rounded-lg overflow-hidden">
-                <div className="grid grid-cols-6 gap-4 p-4 bg-white border-b border-[#1a5f7a]/10 text-sm font-medium text-[#1a5f7a]">
+              <div className="border border-[#1a5f7a]/10 rounded-lg overflow-hidden">
+                <div className="grid grid-cols-6 gap-4 p-4 border-b border-[#1a5f7a]/10 text-sm font-medium text-[#1a5f7a]">
                   <div>Facility</div>
                   <div>Type</div>
                   <div>Capacity</div>

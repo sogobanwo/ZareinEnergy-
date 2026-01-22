@@ -27,9 +27,9 @@ export default function CTASection() {
               Ready to power your future?
             </div>
             <div className="self-stretch text-center text-[#1a5f7a] text-base leading-7 font-sans font-medium">
-              Join leading energy companies worldwide optimizing power generation,
+              Join leading energy companies worldwide optimizing power 
               <br />
-              distribution, and sustainability with Zarein Energy.
+              generation, distribution, and sustainability with Zarein Energy.
             </div>
           </div>
           <div className="w-full max-w-[497px] flex flex-col justify-center items-center gap-12">

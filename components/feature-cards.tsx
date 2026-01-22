@@ -26,7 +26,7 @@ export function FeatureCards() {
               key={index}
               className={`p-6 flex flex-col gap-2 ${
                 // Updated feature card borders to 1px
-                feature.highlighted ? "bg-white border border-[#e0dedb] shadow-sm" : "border border-[#e0dedb]/80"
+                feature.highlighted ? "border border-[#e0dedb] shadow-sm" : "border border-[#e0dedb]/80"
               }`}
             >
               {feature.highlighted && (

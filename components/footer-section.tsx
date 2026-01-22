@@ -7,6 +7,7 @@ export default function FooterSection() {
           {/* Brand Section */}
           <div className="self-stretch flex justify-start items-center gap-2">
             <img src="/zarein-logo.png" alt="Zarein Energy" className="h-8 w-auto" />
+            <div className="text-center text-[#1a5f7a] text-2xl lg:text-4xl font-semibold font-serif">Zarein Energy</div>
           </div>
           <div className="text-[#1a5f7a] text-sm font-medium leading-[18px] font-sans">
             Powering tomorrow's energy solutions

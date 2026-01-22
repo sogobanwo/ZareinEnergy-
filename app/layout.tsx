@@ -2,6 +2,11 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Instrument_Serif } from "next/font/google"
 import "./globals.css"
+import { Header } from "@/components/header"
+import { PageTransition } from "@/components/page-transition"
+import CTASection from "@/components/cta-section"
+import FooterSection from "@/components/footer-section"
+import { PageShell } from "@/components/page-shell"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,11 +28,14 @@ export const metadata: Metadata = {
   description:
     "Innovative sustainable energy solutions for power generation, distribution, and grid modernization. Zarein Energy delivers renewable energy and smart grid technologies for a cleaner tomorrow.",
   keywords: ["renewable energy", "solar power", "wind energy", "smart grid", "energy storage", "power distribution"],
+  icons: {
+    icon: '/favicon.ico',
+  },
   openGraph: {
     title: "Zarein Energy - Powering the Future",
     description: "Leading sustainable energy company specializing in power generation and grid solutions",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -37,16 +45,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} antialiased`}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400&display=swap" />
-      </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Header />
+        <PageTransition>
+          <PageShell>
+            
+              {children}
+              <CTASection />
+              <FooterSection />
+          </PageShell>
+        </PageTransition>
+
+      </body>
     </html>
   )
 }

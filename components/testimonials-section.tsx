@@ -3,18 +3,6 @@
 import { useState, useEffect } from "react"
 import type React from "react"
 
-// Badge component for consistency
-function Badge({ icon, text }: { icon: React.ReactNode; text: string }) {
-  return (
-      <div className="px-[14px] py-[6px] bg-white shadow-[0px_0px_0px_4px_rgba(26,95,122,0.05)] overflow-hidden rounded-[90px] flex justify-start items-center gap-[8px] border border-[rgba(26,95,122,0.08)] shadow-xs">
-      <div className="w-[14px] h-[14px] relative overflow-hidden flex items-center justify-center">{icon}</div>
-      <div className="text-center flex justify-center flex-col text-[#1a5f7a] text-xs font-medium leading-3 font-sans">
-        {text}
-      </div>
-    </div>
-  )
-}
-
 export default function TestimonialsSection() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
@@ -68,11 +56,10 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <div className="w-full border-b border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
-      {/* Header Section */}
+    <div className="w-full border-y border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
 
       {/* Testimonial Content */}
-      <div className="self-stretch px-2 overflow-hidden flex justify-start items-center bg-background border border-b border-l-0 border-r-0 border-t-0">
+      <div className="self-stretch px-2 overflow-hidden flex justify-start items-center border border-b border-l-0 border-r-0 border-t-0">
         <div className="flex-1 py-16 md:py-17 flex flex-col md:flex-row justify-center items-end gap-6">
           <div className="self-stretch px-3 md:px-12 justify-center items-start gap-4 flex flex-col md:flex-row">
             <img
@@ -116,7 +103,7 @@ export default function TestimonialsSection() {
           <div className="pr-6 justify-start items-start gap-[14px] flex">
             <button
               onClick={() => handleNavigationClick((activeTestimonial - 1 + testimonials.length) % testimonials.length)}
-              className="w-9 h-9 shadow-[0px_1px_2px_rgba(0,0,0,0.08)] overflow-hidden rounded-full border border-[rgba(0,0,0,0.15)] justify-center items-center gap-2 flex hover:bg-gray-50 transition-colors"
+              className="w-9 h-9 shadow-[0px_1px_2px_rgba(0,0,0,0.08)] overflow-hidden rounded-full border border-[rgba(0,0,0,0.15)] justify-center items-center gap-2 flex hover:bg-gray-50 hover:cursor-pointer transition-colors"
             >
               <div className="w-6 h-6 relative overflow-hidden">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +119,7 @@ export default function TestimonialsSection() {
             </button>
             <button
               onClick={() => handleNavigationClick((activeTestimonial + 1) % testimonials.length)}
-              className="w-9 h-9 shadow-[0px_1px_2px_rgba(0,0,0,0.08)] overflow-hidden rounded-full border border-[rgba(0,0,0,0.15)] justify-center items-center gap-2 flex hover:bg-gray-50 transition-colors"
+              className="w-9 h-9 shadow-[0px_1px_2px_rgba(0,0,0,0.08)] overflow-hidden rounded-full border border-[rgba(0,0,0,0.15)] justify-center items-center gap-2 flex hover:bg-gray-50 hover:cursor-pointer transition-colors"
             >
               <div className="w-6 h-6 relative overflow-hidden">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
