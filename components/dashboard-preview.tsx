@@ -1,0 +1,87 @@
+import { Button } from "@/components/ui/button"
+export function DashboardPreview() {
+  return (
+    <section className="relative pb-16">
+      <div className="max-w-[1060px] mx-auto px-4">
+        {/* Dashboard Interface Mockup */}
+        <div className="relative bg-white rounded-lg shadow-lg border border-[#e0dedb] overflow-hidden">
+          {/* Dashboard Header */}
+          <div className="flex items-center justify-between p-4 border-b border-[#1a5f7a]/10">
+            <div className="flex items-center gap-3">
+              <div className="text-[#1a5f7a] font-semibold">Zarein Energy</div>
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-sm text-[#1a5f7a]">Grid Monitoring</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-[#1a5f7a] rounded-full"></div>
+            </div>
+          </div>
+
+          {/* Sidebar and Main Content */}
+          <div className="flex">
+            {/* Sidebar */}
+            <div className="w-48 bg-white border-r border-[#1a5f7a]/10 p-4">
+              <nav className="space-y-2">
+                <div className="text-xs font-medium text-[#1a5f7a] uppercase tracking-wide mb-3">Navigation</div>
+                {["Dashboard", "Grid Status", "Energy Output", "Storage", "Alerts", "Reports"].map((item) => (
+                  <div key={item} className="text-sm text-[#1a5f7a] py-1 hover:text-[#0f4a61] cursor-pointer">
+                    {item}
+                  </div>
+                ))}
+              </nav>
+            </div>
+
+            {/* Main Content */}
+            <div className="flex-1 p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-xl font-semibold text-[#1a5f7a]">Active Power Plants</h2>
+                <Button className="bg-gradient-to-r from-[#1a5f7a] to-[#2b8c3e] hover:from-[#0f4a61] hover:to-[#1f6a2f] text-white text-sm">Add Facility</Button>
+              </div>
+
+              {/* Table Mockup */}
+              <div className="bg-white border border-[#1a5f7a]/10 rounded-lg overflow-hidden">
+                <div className="grid grid-cols-6 gap-4 p-4 bg-white border-b border-[#1a5f7a]/10 text-sm font-medium text-[#1a5f7a]">
+                  <div>Facility</div>
+                  <div>Type</div>
+                  <div>Capacity</div>
+                  <div>Current Output</div>
+                  <div>Efficiency</div>
+                  <div>Status</div>
+                </div>
+
+                {/* Table Rows */}
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <div key={i} className="grid grid-cols-6 gap-4 p-4 border-b border-[#1a5f7a]/10 text-sm">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 bg-[#1a5f7a] rounded-full"></div>
+                      <span className="text-[#1a5f7a]">Plant {String.fromCharCode(65 + (i % 5))}</span>
+                    </div>
+                    <div className="text-[#1a5f7a]">{i % 3 === 0 ? "Solar" : i % 3 === 1 ? "Wind" : "Hydro"}</div>
+                    <div className="font-medium text-[#1a5f7a]">{1000 + i * 100} MW</div>
+                    <div className="font-medium text-[#2b8c3e]">{(950 + i * 20) % 1000} MW</div>
+                    <div className="text-[#1a5f7a]">{94 + i % 5}%</div>
+                    <div>
+                      <span
+                        className={`px-2 py-1 rounded text-xs font-medium ${
+                          i % 4 === 0
+                            ? "bg-green-100 text-green-700"
+                            : i % 4 === 1
+                              ? "bg-blue-100 text-blue-700"
+                              : i % 4 === 2
+                                ? "bg-yellow-100 text-yellow-700"
+                                : "bg-orange-100 text-orange-700"
+                        }`}
+                      >
+                        {i % 4 === 0 ? "Optimal" : i % 4 === 1 ? "Active" : i % 4 === 2 ? "Maintenance" : "Alert"}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
